@@ -4,7 +4,7 @@ Updated by: Dan Garrette (dhg@cs.utexas.edu).  See the comments in `utthesis2015
 
 This passed inspection by the graduate school in Spring 2015.
 
-You can download all the files as a `zip` file by clicking the "Downloaded ZIP" button on the right ->
+You can download all the files as a `zip` file by clicking the "Download ZIP" button on the right ->
 
 Please email me or submit a pull request if you have improvements or contributions.
 
