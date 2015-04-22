@@ -1,10 +1,15 @@
 # UT-Austin Dissertation/Thesis LaTeX Template
 
-updated by: Dan Garrette (dhg@cs.utexas.edu)
+Updated by: Dan Garrette (dhg@cs.utexas.edu).  See the comments in `utthesis2015.sty` for the long list of people who have worked on this before.
 
 This passed inspection by the graduate school in Spring 2015.
 
-## How to use:
+You can download all the files as a `zip` file by clicking the "Download ZIP" button on the right ->
+
+Please email me or submit a pull request if you have improvements or contributions.
+
+
+## How to use it:
 
 Edit the following files:
 
