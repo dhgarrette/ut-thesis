@@ -611,14 +611,21 @@
 %%%
 \newenvironment{thesisacknowledgments}
     {%\doublespace\small\normalsize
-     \chapter*{\@thesisacknowledgmenthead
-         \@mkboth{\uppercase{\@thesisacknowledgmenthead}}
-                 {\uppercase{\@thesisacknowledgmenthead}}}
-     \addcontentsline{toc}{chapter}{\@thesisacknowledgmenthead}
-     \begin{spacing}{\@defaultbaselinestretch}}
-    {\end{spacing} \par \vspace{20mm}
-     \raggedleft \@thesisacknowledgmentsigname \\[10mm]
-     \raggedright \@thesisacknowledgmentsigplace \newpage}
+     \chapter*{
+       \thesisacknowledgmentheadtypesize
+       \@thesisacknowledgmenthead
+         %\@mkboth{\uppercase{\@thesisacknowledgmenthead}}
+         %        {\uppercase{\@thesisacknowledgmenthead}}
+                 }                 
+     %\addcontentsline{toc}{chapter}{\@thesisacknowledgmenthead}
+     %\begin{spacing}{\@defaultbaselinestretch}
+     }
+    {
+    %\end{spacing} 
+%    \par \vspace{20mm}
+%     \raggedleft \@thesisacknowledgmentsigname \\[10mm]
+%     \raggedright \@thesisacknowledgmentsigplace 
+     \newpage}
 
 %%%
 %%% Environment to generate vita page.
@@ -1028,4 +1035,12 @@ Wednesday\or Thursday\or Friday\or Saturday\fi}
 }
 
 
+%%% 
+%%% If a chapter contains material that has previously been published, then just below the \chapter{} command, add something like:
+%%% \previouslypublished{The Full Citation.  My co-authors contributed blah blah.}
+%%% 
+\newcommand{\previouslypublished}[1]{
+  \nomarkerfootnote{#1}
+  \vspace{-18pt}
+}
 
